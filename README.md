@@ -36,8 +36,7 @@ module half_subtractor (
 );
     assign Diff   = A ^ B;      // XOR
     assign Borrow = (~A) & B;  // A' . B
-endmodule```
-```
+endmodule
 ### Testbench Program
 module tb3;
     reg A, B;
@@ -76,6 +75,7 @@ module tb3;
         #10 $finish;
     end
 endmodule
+
 
 ### Truth Table
 
